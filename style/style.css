@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+header {
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+}
+
+.center {
+    max-width: 1129px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left-logo {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.center-header {
+    width: 859px;
+}
+
+.right-logo {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+.top-content {
+    display: flex;
+    align-items: center;
+    background: #F1E4E6;
+}
+
+.top-content img {
+    width: 50%;
+}
+
+.top-content-promo {
+    /* width: 377px; */
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.top-content h1 {
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.top-content h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.top-content h2 span {
+    color: #F16D7F;
+}
+
+.preview-cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.prev-card h2 {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.prev-card-1 h2 {
+    position: relative;
+    left: 151px;
+    top: -154px;
+}
+
+.prev-card h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.prev-card-1 h1 {
+    position: relative;
+    left: 110px;
+    top: -154px;
+}
+
+.prev-card-2 h2 {
+    position: relative;
+    left: 146px;
+    top: -154px;
+}
+
+.prev-card-2 h1 {
+    position: relative;
+    left: 129px;
+    top: -154px;
+}
+
+.prev-card-3 h2 {
+    position: relative;
+    left: 120px;
+    top: -154px;
+}
+
+.prev-card-3 h1 {
+    position: relative;
+    left: 124px;
+    top: -154px;
+}
+
+.prev-card-big {}
+
+.prev-card-big h2 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    position: relative;
+    left: 490px;
+    top: -122px;
+    color: #FFFFFF;
+}
+
+.prev-card-big h1 {
+    position: relative;
+    left: 497px;
+    top: -122px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+
+}
+
+
+
+
+
+header svg:hover path {
+    fill: red;
+}
