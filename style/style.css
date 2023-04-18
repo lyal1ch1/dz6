@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -42,12 +43,16 @@ header {
 
 .top-content {
     display: flex;
+    /* justify-content: center; */
     align-items: center;
     background: #F1E4E6;
 }
 
 .top-content img {
+    /* max-width: 764px; */
     width: 50%;
+    
+    /* max-height: 800px; */
 }
 
 .top-content-promo {
@@ -78,11 +83,16 @@ header {
 
 .preview-cards {
     margin-top: 60px;
+    /* position: relative; */
     display: grid;
     grid-template-columns: repeat(3, 360px);
     gap: 30px;
     justify-content: center;
 
+}
+
+.prev-card {
+    position: relative;
 }
 
 .prev-card h2 {
@@ -94,9 +104,9 @@ header {
 }
 
 .prev-card-1 h2 {
-    position: relative;
-    left: 151px;
-    top: -154px;
+    position: absolute;
+    left: 154px;
+    top: 113px;
 }
 
 .prev-card h1 {
@@ -107,51 +117,54 @@ header {
 }
 
 .prev-card-1 h1 {
-    position: relative;
-    left: 110px;
-    top: -154px;
+    position: absolute;
+    left: 120px;
+    top: 133px;
 }
 
 .prev-card-2 h2 {
-    position: relative;
-    left: 146px;
-    top: -154px;
+    position: absolute;
+    left: 135px;
+    top: 113px;
 }
 
 .prev-card-2 h1 {
-    position: relative;
-    left: 129px;
-    top: -154px;
+    position: absolute;
+    left: 120px;
+    top: 133px;
 }
 
 .prev-card-3 h2 {
-    position: relative;
-    left: 120px;
-    top: -154px;
+    position: absolute;
+    left: 117px;
+    top: 113px;
 }
 
 .prev-card-3 h1 {
-    position: relative;
-    left: 124px;
-    top: -154px;
+    position: absolute;
+    left: 120px;
+    top: 133px;
 }
 
-.prev-card-big {}
+.prev-card-big {
+    position: relative;
+}
 
 .prev-card-big h2 {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    position: relative;
+    position: absolute;
     left: 490px;
-    top: -122px;
+    top: 66px;
     color: #FFFFFF;
+    width: 200px;
 }
 
 .prev-card-big h1 {
-    position: relative;
-    left: 497px;
-    top: -122px;
+    position: absolute;
+    left: 495px;
+    top: 92px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -159,10 +172,75 @@ header {
 
 }
 
-
-
-
-
-header svg:hover path {
-    fill: red;
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
 }
+
+.catalog h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.catalog h4 {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.about-of-card {
+    padding: 24px 29px 24px 16px;
+    background: #F8F8F8;
+}
+
+.about-of-card h2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.about-of-card p {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.about-of-card h3 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F
+}
+
+.catalog button {
+    margin-top: 48px;
+    margin-bottom: 60px;
+    padding: 15px 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F26376;
+    background-color: #FFFFFF;
+    border: 1px solid #FF6A6A;
+}
+
+/* header svg:hover path {
+    fill: red;
+} */
