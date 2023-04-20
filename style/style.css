@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -51,7 +51,7 @@ header {
 .top-content img {
     /* max-width: 764px; */
     width: 50%;
-    
+
     /* max-height: 800px; */
 }
 
@@ -86,6 +86,8 @@ header {
     /* position: relative; */
     display: grid;
     grid-template-columns: repeat(3, 360px);
+    /* grid-template-columns: repeat(3, minmax(30%, 362px)); */
+
     gap: 30px;
     justify-content: center;
 
@@ -93,6 +95,14 @@ header {
 
 .prev-card {
     position: relative;
+}
+
+.prev-card img {
+    width: 100%;
+}
+
+.prev-card-big img {
+    width: 100%;
 }
 
 .prev-card h2 {
@@ -147,6 +157,7 @@ header {
 }
 
 .prev-card-big {
+    grid-column: span 3;
     position: relative;
 }
 
@@ -239,6 +250,92 @@ header {
     color: #F26376;
     background-color: #FFFFFF;
     border: 1px solid #FF6A6A;
+}
+
+
+@media (max-width:1135px) and (min-width:767px) {
+    .center-header {
+        width: 424px;
+    }
+
+    .top-content h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .top-content h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .preview-cards {
+        grid-template-columns: repeat(3, 232px);
+        gap: 19px;
+
+    }
+
+    .prev-card {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .prev-card-1 h2 {
+        left: 87px;
+        top: 72px;
+    }
+
+    .prev-card-1 h1 {
+        left: 42px;
+        top: 94px;
+        width: 155px;
+    }
+
+    .prev-card-2 h2 {
+        position: absolute;
+        left: 90px;
+        top: 72px;
+    }
+
+    .prev-card-2 h1 {
+        left: 72px;
+        top: 94px;
+    }
+
+    .prev-card-3 h2 {
+        left: 62px;
+        top: 75px;
+    }
+
+    .prev-card-3 h1 {
+        position: absolute;
+        left: 65px;
+        top: 94px;
+    }
+
+    .prev-card-big h2 {
+        left: 294px;
+        top: 40px;
+    }
+
+    .prev-card-big h1 {
+        left: 296px;
+        top: 61px;
+    }
+
+    .catalog {
+        margin-top: 110px;
+    }
+
+    .catalog h4 {
+        margin-top: 3px;
+    }
+
+    .catalog-cards {
+        margin-top: 73px;
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
 }
 
 /* header svg:hover path {
